@@ -24,8 +24,8 @@ kafka-python-demo/
 ```
 ## Prerequisites
 
+- Python 3.12 or higher
 - Docker and Docker Compose
-- Python 3.8 or higher
 - pip (Python package manager)
 
 ## Installation
