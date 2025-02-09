@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: Kafka_experiment
+Version: 0.1.0
+Summary: Your project description
+Author-email: Your Name <your.email@example.com>
+Requires-Dist: confluent-kafka==2.0.2
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: six==1.16.0
