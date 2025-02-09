@@ -5,21 +5,21 @@ This project demonstrates the usage of Apache Kafka with Python, implementing a 
 ## Project Structure
 
 ```
-kafka-python-demo/  
-├── src/  
-│ ├── consumer/  
-│ │ ├── message_consumer.py  
-│ ├── producer/  
-│ │ ├── message_producer.py  
-│ ├── config/  
-│ │ ├── settings.py  
-│ ├── __init__.py  
-│ ├── database/  
-│ │ ├── database.py  
-│ ├── requirements.txt  
-│ ├── docker/  
-│ │ ├── docker-compose.yml  
-│ ├── README.md  
+kafka-python-demo/
+├── src/
+│ ├── consumer/
+│ │ ├── message_consumer.py
+│ ├── producer/
+│ │ ├── message_producer.py
+│ ├── config/
+│ │ ├── settings.py
+│ ├── __init__.py
+│ ├── database/
+│ │ ├── database.py
+│ ├── requirements.txt
+│ ├── docker/
+│ │ ├── docker-compose.yml
+│ ├── README.md
 
 ```
 ## Prerequisites
