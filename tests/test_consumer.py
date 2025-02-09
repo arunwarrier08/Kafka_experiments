@@ -51,6 +51,7 @@ def test_consume_messages_error(mock_kafka_consumer, mock_db_connection, mocker)
     
     # Run the consumer
     consumer.consume_messages()
+    print("This is a very long line that exceeds the maximum line length set by Flake8, which is typically 79 or 88 characters, and it should trigger a Flake8 error when you try to commit this file.")
     
     # Verify no database interaction occurred
     mock_cursor.execute.assert_not_called()
