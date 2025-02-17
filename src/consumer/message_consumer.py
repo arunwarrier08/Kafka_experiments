@@ -51,7 +51,6 @@ class MessageConsumer:
                 data = json.loads(message.value().decode("utf-8"))
                 logger.info(f"Received message: {data}")
                 self._save_to_database(data)
-                self._running = False
 
         except Exception as e:
             logger.error(f"Error consuming messages: {e}")
