@@ -85,14 +85,53 @@ The consumer will start listening for messages and store them in PostgreSQL.
 
 ### Publishing Messages
 
-1. Open another terminal and activate your virtual environment
-2. Use the Python REPL or create a script to send messages:
-```python
-from src.producer.message_producer import MessageProducer
+There are two ways to send messages:
 
-producer = MessageProducer()
-producer.send_message("Hello, Kafka!")
+1. Using send_test_message.py (Recommended):
+```bash
+# Send a single message
+python send_test_message.py -m "Hello, Kafka!"
+
+# Send multiple messages
+python send_test_message.py -c 5
+
+# Send messages with interval
+python send_test_message.py -m "Periodic message" -c 3 -i 2
 ```
+
+Options:
+- `-m` or `--message`: Custom message to send (optional)
+- `-c` or `--count`: Number of messages to send (default: 1)
+- `-i` or `--interval`: Interval between messages in seconds (default: 0)
+
+2. Using send_message.py (Simple single message):
+```bash
+python send_message.py
+```
+
+### Monitoring Kafka with Kafdrop
+
+The project includes Kafdrop, a web UI for monitoring Kafka:
+
+1. Access the Kafdrop UI:
+```bash
+http://localhost:9000
+```
+
+2. Features available in Kafdrop:
+- View all topics and their configurations
+- Monitor consumer groups and their offsets
+- Browse messages in topics
+- View broker information
+- Check cluster health
+- Create new topics
+- View partition information
+
+3. Common operations in Kafdrop:
+- Click on a topic to view its details
+- View messages: Select a topic → View Messages
+- Check consumer groups: Click on "Consumer Groups"
+- Monitor broker health: Click on "Brokers"
 
 ### Checking the Results
 
